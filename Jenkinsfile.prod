@@ -8,13 +8,13 @@ pipeline {
         }
         stage('build'){
             steps{
-                //sh "cp -f ./* ../home/nginxNcertbot/test"
+                //sh " "
             }
         }
         stage('Deploy'){
             steps{
                 echo 'Docker Restart'
-                //sudo docker cp  4473428c96fa:/var/jenkins_home/workspace/profile/. /home/nginxNcertbot
+                sh "test"
             }
         }
     }
