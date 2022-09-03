@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    stages {
+        stage('test'){
+            steps{
+                echo '해당 프로젝트 복사 후 이동 중...'
+            }   
+        }
+        stage('build'){
+            steps{
+                sh "cp -f ./* /home/nginxNcertbot/test"
+            }
+        }
+        stage('Deploy'){
+            steps{
+                echo 'Docker Restart'
+                sh 'docker restart f5dd1866ffd0'
+            }
+        }
+    }
+}
