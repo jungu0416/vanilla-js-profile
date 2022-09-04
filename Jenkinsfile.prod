@@ -8,7 +8,6 @@ pipeline {
         }
         stage('build'){
             steps{
-                //sh " "
                 sh "sudo cp -r ./* /home/profile"
             }
         }
