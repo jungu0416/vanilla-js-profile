@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy'){
             steps{
                 echo 'Docker Restart'
-                sh " docker restart 876f2c983154"
+                //sh " docker restart 876f2c983154"
             }
         }
     }
