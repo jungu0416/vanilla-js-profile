@@ -9,13 +9,13 @@ pipeline {
         stage('build'){
             steps{
                 //sh " "
-                sh "test"
+                sh "cp -r ./* /home/profile"
             }
         }
         stage('Deploy'){
             steps{
                 echo 'Docker Restart'
-                sh "test"
+                sh " docker restart 876f2c983154"
             }
         }
     }
