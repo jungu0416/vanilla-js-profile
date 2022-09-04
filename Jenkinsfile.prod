@@ -9,7 +9,7 @@ pipeline {
         stage('build'){
             steps{
                 //sh " "
-                sh "sudo cp -r ./* /home/profile"
+                sh "cp -r ./* /home/profile"
             }
         }
         stage('Deploy'){
