@@ -11433,3 +11433,10 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+.imgStyle{
+  width: 50%; 
+  vertical-align: middle; 
+  margin-bottom: 1rem !important;
+}
+
