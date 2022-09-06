@@ -11434,9 +11434,29 @@ section.resume-section .resume-section-content {
   }
 }
 
-.imgStyle{
+.imgStyle1{
+  width: 60%; 
+  vertical-align: middle; 
+  margin-bottom: 1rem !important;
+}
+.imgStyle2{
+  width: 40%;
+  height: 77%;
+  vertical-align: middle;
+  margin-bottom: 1rem !important;
+}
+.imgStyle3{
+  width: 80%; 
+  vertical-align: middle; 
+  margin-bottom: 1rem !important;
+}
+.imgStyle4{
+  width: 80%; 
+  vertical-align: middle; 
+  margin-bottom: 1rem !important;
+}
+.imgStyle5{
   width: 70%; 
   vertical-align: middle; 
   margin-bottom: 1rem !important;
 }
-
