@@ -56,6 +56,27 @@
                     <div class="flex-shrink-0"><span class="text-primary">2022.10</span></div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
+                            <h3 class="mb-0">ELK stack + filebeat</h3>
+                            <div class="subheading mb-3"><a href="https://github.com/jungu0416/server">https://github.com/jungu0416/server <- 나중에 kibana.potatoo.dev로 변경</a></div>
+                            <img src="assets/img/ELK.png" class="imgStyle1">
+                            <p>google에는 수많은 docker compose의 예제가 있다. 공식문서에도 있기도 하고 (8.5.0버전 사용중)</p> 
+                            <p>
+                               docker compose 를 사용하면 logstash + elasticsearch + kibana 이 3개를 한번에 자동화 하기때문에 편리하지만 각각의 기능을 이해하고 
+                               컨테이너 따로 올려보면서 공부도 해보자는 마음에 kibana + elasticsearch 만 docker network로 묶고 나머지는 컨테이너를 따로 올려서 구성해보았다.
+                            </p>
+                            <p>
+                               그럼 logstash만 따로 compose에서 빼놓는건데 이부분에서 조금 알아볼게 많다. 로컬인 windows에서는 wsl의 방화벽 및 설정ip도 찾아봐야하고
+                               VM에 대한 가상화부분에도 자연스럽게 관심이 간다. (아니 그럼 백엔드는 언제공부함?) 
+                            </p> 
+                            <p>
+                               본의아니게 windows에서의 docker 와 ubuntu에서의 docker 를 둘 다 하고 있다 ㅋㅋ.
+                               beat는 elastic/filebeat 사용
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2022.10</span></div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
                             <h3 class="mb-0">sqlite-To-Mysql</h3>
                             <div class="subheading mb-3"><a href="https://github.com/jungu0416/sqliteToMysql">https://github.com/jungu0416/sqliteToMysql</a></div>
                             <img src="assets/img/travel.png" class="imgStyle1">
@@ -64,7 +85,7 @@
                             <p>사실 2개 있지만 한개는 varchar의 length가 일정부분 넘어가면 오류를 뱉고 또 다른 하나는 한글 인코딩이 안된다..</p>
                             <p>결론적으로 sqlite로 파일을 만들어 이를 mysql로 변환을 한다.</p>
                             <p>DB Connection을 싱글톤으로 하고 싶었으나 로직상 물리적인 시간이 오래걸려 static으로만 사용하였다.</p>
-                            <p>공통처리를 좀 해보고 싶은데.. statement로 받는것은.. mapper에서 ${}도 안쓰고싶은데.. SQL Injection도..(외부 서비스하는건 아니지만) 다른 좋은 코드가 없을까?</p>
+                            <p>공통처리를 좀 해보고 싶은데.. statement로 받는것은.. mapper에서 ${}도 안쓰고싶은데.. SQL Injection 위험도 있다하고(외부 서비스하는건 아니지만) 다른 좋은 코드가 없을까?</p>
                             <p>디자인패턴도 고민해봐야하는데... 아직은 많이 부족한것 같다.</p>
                             <p>jar로 배포하였고 Scanner로 입력받는다.</p>
                         </div>
@@ -144,8 +165,7 @@
                         <div class="flex-shrink-0"><span class="text-primary">2021.12 ~ 2022.05 &nbsp;</span></div>
                         <div class="flex-grow-1">
                             <h3 class="mb-0"></h3>
-                            <p>동국대학교 uDrims version up (java + oracle) <a href="https://mdrims.dongguk.edu">[https://mdrims.dongguk.edu/]</a></p>
-                            
+                            <p>동국대학교 uDrims version up (java + oracle) </p>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
