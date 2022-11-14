@@ -58,14 +58,14 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">ELK stack + filebeat</h3>
                             <div class="subheading mb-3"><a href="https://github.com/jungu0416/server">https://github.com/jungu0416/server <- 나중에 kibana.potatoo.dev로 변경</a></div>
-                            <img src="assets/img/ELK.png" class="imgStyle1">
+                            <img src="assets/img/elk-stack-elkb-diagram.png" class="imgStyle1">
                             <p>google에는 수많은 docker compose의 예제가 있다. 공식문서에도 있기도 하고 (8.5.0버전 사용중)</p> 
                             <p>
                                docker compose 를 사용하면 logstash + elasticsearch + kibana 이 3개를 한번에 자동화 하기때문에 편리하지만 각각의 기능을 이해하고 
                                컨테이너 따로 올려보면서 공부도 해보자는 마음에 kibana + elasticsearch 만 docker network로 묶고 나머지는 컨테이너를 따로 올려서 구성해보았다.
                             </p>
                             <p>
-                               그럼 logstash만 따로 compose에서 빼놓는건데 이부분에서 조금 알아볼게 많다. 인증서 부분과 로컬인 windows에서는 wsl의 방화벽 및 ip도 찾아봐야하고
+                               그럼 logstash만 따로 compose에서 빼놓는건데 이부분에서 조금 알아볼게 많다. docker network 부터,인증서, 로컬인 windows에서는 wsl의 방화벽 및 ip도 찾아봐야하고
                                VM에 대한 가상화부분에도 자연스럽게 관심이 간다. (아니 그럼 백엔드는 언제공부함?) 
                             </p> 
                             <p>
