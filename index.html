@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Career">Career</a></li>
                 </ul>
             </div>
@@ -45,20 +45,35 @@
                         <a href="mailto:jungu0416@naver.com">jungu0416@naver.com</a>
                     </div>
                     <h3 class="mb-0" style="text-transform: none;">Programmer</h3>
-                    <p class="lead mb-5">SINCE 2021-04-12 ~</p>      
+                    <p class="lead mb-5">SINCE 2021-04-12 ~</p>   
+                    <h3>Server</h3>
+                    <img src="assets/img/ServerDiagram.png" class="imgStyle1">
+                    <p>
+                        AWS EC2(t3a.medium)로 서버 구성을 하였으나 점차 많아지는 프로젝트와 CI/CD 까지 자동화 해놓았기 때문에
+                        ram 용량이 많이 부족해졌다. 
+                    </p>
+                    <p>    
+                        ram 용량이 커질수록 기하급수적으로 올라가는 클라우드 비용에 홈서버가 있으면 좋겠다는 생각이 들었다. 
+                    </p>
+                    <p>    
+                        저전력pc로 구성하니 24시간 구동하여도 전기세도 많이 안들고 좋다.
+                    </p>
+                    <p>
+                        클라우드 서비스에는 nginx , 나머지는 홈서버에서 구축하였다. 
+                    </p>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Portfolio-->
-            <section class="resume-section" id="Portfolio">
-                !!!certificate 추가필요!!!!! 플젝이랑 홈페이지 소개랑 나누기
+
+            <!-- project-->
+            <section class="resume-section" id="Projects">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">PORTFOLIO - JAVA</h2>
-                    <div class="flex-shrink-0"><span class="text-primary">2022.10</span></div>
+                    <h2 class="mb-5">Projects</h2>
+                    <div class="flex-shrink-0"><span class="text-primary">2022.11</span></div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">ELK stack + filebeat</h3>
-                            <div class="subheading mb-3"><a href="https://github.com/jungu0416/server">https://github.com/jungu0416/server <- 나중에 kibana.potatoo.dev로 변경</a></div>
+                            <div class="subheading mb-3"><a href="https://kibana.potatoo.dev">https://kibana.potatoo.dev</a></div>
                             <img src="assets/img/elk-stack-elkb-diagram.png" class="imgStyle1">
                             <p>google에는 수많은 docker compose의 예제가 있다. 공식문서에도 있기도 하고 (8.5.0버전 사용중)</p> 
                             <p>
@@ -86,7 +101,7 @@
                             <p>DB Connection을 싱글톤으로 하고 싶었으나 로직상 물리적인 시간이 오래걸려 static으로만 사용하였다.</p>
                             <p>공통처리를 좀 해보고 싶은데.. statement로 받는것은.. mapper에서 ${}도 안쓰고싶은데.. SQL Injection 위험도 있다하고(외부 서비스하는건 아니지만) 다른 좋은 코드가 없을까?</p>
                             <p>디자인패턴도 고민해봐야하는데... 아직은 많이 부족한것 같다.</p>
-                            <p>Scanner 입력. jar로 배포. ( .sh, .bat)</p>
+                            <p>jar로 배포 Scanner 입력( .sh, .bat)</p>
                         </div>
                     </div>
                     <div class="flex-shrink-0"><span class="text-primary">2022.05</span></div>
@@ -101,7 +116,7 @@
                             <p>Front & Back을 서로 분리하였으며 REST 통신을 한다. 나중에 프론트 GUI를 좀 더 꾸미려하는데 이때 관리하기도 편할것 같다.</p>
                             <p>개인프로젝트는 이런점이 좋다. 아주 적은 소스양으로 구현시간은 대폭 줄이고 기술공부를 할 수 있는 장점이 있다.</p>
                             <p>소스도 엄청 간단하다 그냥 RestController, JSON 형식..</p>
-                            <p>뭐를 더해볼까 고민하다가 배포에 Docker를 추가하였다. 이 이후로 모든 프로젝트는 AWS + Docker + HTTPS +Jenkins 는 Default이다.</p>
+                            <p>뭐를 더해볼까 고민하다가 배포에 Docker를 추가하였다. 이 이후로 모든 프로젝트는 AWS + Docker + HTTPS + Jenkins 는 default이다.</p>
                         </div>
                     </div>
                     <div class="flex-shrink-0"><span class="text-primary">2022.04</span></div>
@@ -120,9 +135,10 @@
                             <h3 class="mb-0">UGA(우리들가까이있는) MART 프로젝트 [웹] [PPTX 다운로드]</h3>
                             <div class="subheading mb-3"><a href="https://ugamart.potatoo.dev">https://ugamart.potatoo.dev</a></div>
                             <img src="assets/img/ugamart.png" class="imgStyle3">
-                            <p>두번째 학원 프로젝트 이다. 우가마트.. 네이밍 기가막히게 지은거 같은데 아닌가? ㅋ</p>
+                            <p>두번째 프로젝트 이다. 우가마트.. 네이밍 기가막히게 지은거 같은데 아닌가? ㅋ</p>
                             <p>Socket 통신을 하고 싶어서 구매자가 구매를 하면 배달원이 배달픽업을 하고 실시간으로 위치를 알려주는 배민 같은 프로그램을 만들어보았다.</p>
                             <p>구매자에게 도착예상시간을 알려주고 싶어서 TMAP API도 사용해보았다.</p>
+                            <p>Spring MVC 패턴</p>
                         </div>
                     </div>
                     <div class="flex-shrink-0"><span class="text-primary">2021-06</span></div>
@@ -131,10 +147,9 @@
                             <h3 class="mb-0">STORBUCK 프로젝트 [웹] [PPTX 다운로드]</h3>
                             <div class="subheading mb-3"><a href="https://storbucks.potatoo.dev">https://storbucks.potatoo.dev</a></div>
                             <img src="assets/img/storbucks.png" class="imgStyle4">
-                            <p>첫 학원프로젝트. 스타벅스 홈페이지를 입맛에 맞게 구현해보았다. Spring Mvc 패턴</p>
+                            <p>첫 프로젝트. 스타벅스 홈페이지를 입맛에 맞게 구현해보았다. Servlet & Jsp 구성</p>
                         </div>
                     </div>
-                    <h2 class="mb-5">PORTFOLIO - PYTHON</h2>
                     <div class="flex-shrink-0"><span class="text-primary">2022.06</span></div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -142,7 +157,7 @@
                             <div class="subheading mb-3"><a href="https://github.com/jungu0416/GolfReservationMacro">https://github.com/jungu0416/GolfReservationMacro</a></div>
                             <img src="assets/img/macro.png" class="imgStyle5">
                             <p>수강신청급(? ㅋㅋ) 의 골프장 예약이 어려움에 따라 자동화프로그램(매크로)를 만들어 보았다.</p>
-                            <p>Python언어로 구현, Selenium을 사용하였다. 개인정보에 따라 ID/PW은 삭제하였고 git url로 source 공유</p>
+                            <p>Python으로 구현, Selenium을 사용하였다. 개인정보에 따라 ID/PW은 삭제하였고 git url로 source 공유</p>
                             <p>다 만들어놓고 사용하려보니깐 공지사항에 매크로는 정지대상이란다.. 이런 !!</p>
                         </div>
                     </div>
@@ -178,14 +193,16 @@
                         <div class="flex-shrink-0"><span class="text-primary">2022.10 ~ &nbsp;</span></div>
                         <div class="flex-grow-1">
                             <h3 class="mb-0"></h3>
-                            <p>(주) 고려전산 [Server + Backend]</p>
+                            <p>(주) 고려전산 [ Server + Backend ]</p>
                         </div>
                     </div>
                 </div>
             </section>
+            !!!certificate 추가필요!!!!!
             <hr class="m-0" />
             <hr class="m-0" />
         </div>
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
