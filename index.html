@@ -85,6 +85,7 @@
                             </p> 
                             <p>
                                ip , 방화벽 , 포트포워딩에 대해서 좀 더 깊이있게 고민하는 시간도 가졌다.
+                               (지금 docker compose로 한것은 안비밀)
                             </p>
                         </div>
                     </div>
@@ -98,9 +99,10 @@
                             <p>paradox 에서 바로 mssql로 하고 싶었으나 이를 지원하는 오픈소스 jdbc가 없다.</p>
                             <p>사실 2개 있지만 한개는 varchar의 length가 일정부분 넘어가면 오류를 뱉고 또 다른 하나는 한글 인코딩이 안된다..</p>
                             <p>결론적으로 paradox를 sqlite로 만들어 이를 mysql로 변환을 한다.</p>
-                            <p>DB Connection을 싱글톤으로 하고 싶었으나 로직상 물리적인 시간이 오래걸려 static으로만 사용하였다.</p>
-                            <p>공통처리를 좀 해보고 싶은데.. statement로 받는것은.. mapper에서 ${}도 안쓰고싶은데.. SQL Injection 위험도 있다하고(외부 서비스하는건 아니지만) 다른 좋은 코드가 없을까?</p>
-                            <p>디자인패턴도 고민해봐야하는데... 아직은 많이 부족한것 같다.</p>
+                            <p>DB Connection을 싱글톤으로 하고 싶었으나 synchronized를 적용하면 물리적인 시간이 오래걸려 static으로만 사용하였다.</p>
+                            <p>Autowired 를 하면 싱글톤이 될텐데 이때의 속도는 어떻게 되려나 모르겠다</p>
+                            <p>공통처리를 좀 해보고 싶은데.. statement로 받는것은.. mapper에서 ${}도 안쓰고싶은데.. SQL Injection 위험도 있다하고(외부 서비스하는건 아니지만)</p>
+                            <p>디자인패턴도 고민해봐야하는데...</p>
                             <p>jar로 배포 Scanner 입력( .sh, .bat)</p>
                         </div>
                     </div>
