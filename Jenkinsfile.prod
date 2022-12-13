@@ -8,13 +8,12 @@ pipeline {
         }
         stage('build'){
             steps{
-                sh "sudo cp -r ./* /home/profile"
+                sh "pwd"
             }
         }
         stage('Deploy'){
             steps{
-                echo 'Docker Restart'
-                //sh " docker restart 876f2c983154"
+                echo ' Success !!! '
             }
         }
     }
