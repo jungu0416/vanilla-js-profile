@@ -9,6 +9,7 @@ pipeline {
         stage('build'){
             steps{
                 sh "pwd"
+                sh "cp -f ./* /home/projects/profile"
             }
         }
         stage('Deploy'){
