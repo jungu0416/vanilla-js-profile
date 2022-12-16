@@ -7034,7 +7034,7 @@ textarea.form-control-lg {
 }
 
 .flex-grow-1 {
-  
+  flex-grow: 1 !important;
 }
 
 .flex-shrink-0 {
@@ -8686,7 +8686,7 @@ textarea.form-control-lg {
   }
 
   .flex-md-row {
-    flex-direction: row !important;
+    
   }
 
   .flex-md-column {
