@@ -5,8 +5,9 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 app.set('port', process.env.PORT || 3000);
 
+app.use(express.static('public'))
+
 app.get('/', (req, res) => {
-    //res.send('Hello, Express')
     res.render('index.html')
 })
 
