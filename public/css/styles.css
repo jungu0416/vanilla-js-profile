@@ -41,7 +41,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 151, 215, 0;
+  --bs-primary-rgb: 67, 176, 42;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -241,7 +241,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #59ff7a;
+  color: #4dd18f;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
